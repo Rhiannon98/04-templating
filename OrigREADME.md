@@ -71,29 +71,24 @@ _Your README.md must include:_
 ```md
 # 04-Templating
 
-**Authors**: Rhiannon Mortensen & Stephen Harper
+**Author**: Rhiannon Mortensen & Stephen Harper
 **Version**: 1.0.0 (increment the patch/fix version number up if you make more commits past your first submission)
 
 ## Overview
 We built an application that utilized handlebars.js CDN to replace our cloning method of templating our articles. Then we converted our existing HTML template to fit the bill of our newer method of templating, then updated the .toHtml() method to render stuff via the handlebars template. Also, refactored out traditional jQuery functions and methods in our code to ES6 arrow fuhnctions when we could. 
 
 ## Getting Started
-Use the resources from the OrigiREADME.md, and do their best to follow along with the starter-code instructions.
+<!-- What are the steps that a user must take in order to build this app on their own machine and get it running? -->
 
 ## Architecture
-Languages Used :
-Handlebars, jQuery, JavaScript, CSS for web page design, and HTML for the structure.
+<!-- Provide a detailed description of the application design. What technologies (languages, libraries, etc) you're using, and any other relevant design information. -->
 
 ## Change Log
+<!-- Use this are to document the iterative changes made to your application as each feature is successfully implemented. Use time stamps. Here's an examples:
 
-04-13-2018 10:56AM - Application now has everything that a web page needs to be.
+01-01-2001 4:59pm - Application now has a fully-functional express server, with GET and POST routes for the book resource.
 
 ## Credits and Collaborations
---> 
-for our commented answer:
-https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort
-
-John Cokos, our instructor (well one of them)
-
-Oh, and us (Stephen and Rhiannon)
+<!-- Give credit (and a link) to other people or resources that helped you build this application. -->
+-->
 ```
