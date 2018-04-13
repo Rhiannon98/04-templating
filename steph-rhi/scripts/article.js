@@ -12,7 +12,10 @@ function Article (rawDataObj) {
 }
 
 Article.prototype.toHtml = function() {
-  // TODO: Use Handlebars to render your articles. Get your template from the DOM and "compile" your template with Handlebars.
+  // DONE: Use Handlebars to render your articles. Get your template from the DOM and "compile" your template with Handlebars.
+
+  let template = $('#article-template').html();
+  let templateToRender = Handlebars.compile(template);
 
   // REVIEW: If your template will use properties that aren't on the object yet, add them.
   // Since your template can't hold any JS logic, we need to execute the logic here.
@@ -30,12 +33,13 @@ Article.prototype.toHtml = function() {
   //   this.publishStatus = '(draft)';
   // }
 
-  // TODO: Use the method that Handlebars gave you to return your filled-in html template for THIS article.
-
+  // DONE: Use the method that Handlebars gave you to return your filled-in html template for THIS article.
+  return templateToRender(this);
 };
 
 // COMMENT: Why are there parentheses around "(a,b)" in the .sort() method, but not around the "articleObject" or "article" arguments in the .forEach() methods?
-// PUT YOUR RESPONSE HERE
+// articleObject doesn't accept more than one parameter. rawData sort function accepts parameters. MDN says "The sort() method sorts the elements of an array in place and returns the array. The sort is not necessarily stable. The default sort order is according to string Unicode code points. The time and space complexity of the sort cannot be guaranteed as it is implementation dependent."
+
 rawData.sort((a,b) => {
   return (new Date(b.publishedOn)) - (new Date(a.publishedOn));
 });
