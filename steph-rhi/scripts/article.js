@@ -22,13 +22,6 @@ Article.prototype.toHtml = function () {
 
   this.publishStatus = this.publishedOn ? `published ${this.daysAgo} days ago` : '(draft)';
 
-  // REVIEW: The ternary operator above accomplishes this same logic.
-  // if(this.publishedOn) {
-  //   this.publishStatus = `published ${this.daysAgo} days ago`;
-  // } else {
-  //   this.publishStatus = '(draft)';
-  // }
-
   // DONE: Use the method that Handlebars gave you to return your filled-in html template for THIS article.
   return template(this);
 
